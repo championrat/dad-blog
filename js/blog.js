@@ -1,7 +1,7 @@
-const POSTS_URL = 'https://raw.githubusercontent.com/championrat/dad-blog/main/posts/posts.txt';
+const POSTS_URL = 'https://raw.githubusercontent.com/championrat/dad-blog/master/posts/posts.txt';
 
 fetch(POSTS_URL)
-  .then(res => res.text())
+  .then(res => res.text())  
   .then(parsePosts)
   .catch(err => {
     document.getElementById('blog-container').innerText = 'Failed to load posts.';
